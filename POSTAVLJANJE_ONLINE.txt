@@ -1,0 +1,22 @@
+ATELJE TEPIHA - DEMO ZA RENDER
+
+Ovaj paket je spreman za GitHub -> Render. Demo je samo za javni pregled
+kataloga, porudzbine i administracija su iskljucene da ne bi doslo
+do gubitka podataka ili otkrivanja podataka kupaca.
+
+1. Napravite privatni GitHub repozitorijum (npr. atelje-tepiha-demo).
+2. Otpremite sve sadrzaje ovog foldera u koren repozitorijuma,
+   ukljucujuci render.yaml, app.py, i folder static. Ne uploadovati
+   lokalnu bazu (*.sqlite3) niti admin_credentials.json.
+3. U Render Dashboard -> New -> Blueprint, povežite taj GitHub repozitorijum.
+4. Proverite da plan sadrzi jedan besplatan Python Web Service u Frankfurtu
+   i da env SHOP_DEMO_MODE ostaje 1, zatim Apply.
+5. Render ce izdati javnu HTTPS adresu na domeni onrender.com.
+
+Kada otvorite javni demo, bice dostupni prikaz modela, pretraga i dimenzije,
+ali NE stvarne porudzbine ili promene cena. Kompletan Tarkett katalog
+jos nije importovan.
+
+Pre aktivacije kupovine: produkciona baza, backup, HTTPS, autentifikacija,
+upis podataka o prodavcu i pravni dokumenti, provera svih podataka o
+proizvodima i prava upotrebe fotografija.

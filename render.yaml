@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: atelje-tepiha-demo
+    runtime: python
+    region: frankfurt
+    plan: free
+    buildCommand: echo "Python standard library only"
+    startCommand: python app.py
+    envVars:
+      - key: SHOP_DEMO_MODE
+        value: "1"
+      - key: PYTHONUNBUFFERED
+        value: "1"

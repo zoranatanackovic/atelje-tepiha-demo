@@ -1,0 +1,5 @@
+data/*.sqlite3
+data/admin_credentials.json
+__pycache__/
+*.pyc
+.env
